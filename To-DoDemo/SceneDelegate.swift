@@ -18,10 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow.init(windowScene: scene)
         
-        let controller = TasksListViewController(tasksRepository: TasksRepository())
-        let navController = UINavigationController(rootViewController: controller)
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
+        Router.window = window
+        Router.setRootViewController()
     }
 
 

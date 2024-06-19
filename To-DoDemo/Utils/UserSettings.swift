@@ -12,12 +12,21 @@ final class UserSetting { // Helper class to access UserDefaults, doesn't store 
     static let defaults = UserDefaults.standard
     
     static let kSortedByResultKey = "filteredByResult"
+    static let kIsLoggedKey = "isLoggedIn"
     
     static func getSortedByResult() -> Bool {
-        return defaults.bool(forKey: kSortedByResultKey)
+        defaults.bool(forKey: kSortedByResultKey)
     }
     
     static func setSortedByResult(_ value: Bool) {
         defaults.set(value, forKey: kSortedByResultKey)
+    }
+    
+    static func setIsLogged(_ isLoged: Bool) {
+        defaults.set(isLoged, forKey: self.kIsLoggedKey)
+    }
+
+    static func getIsLogged() -> Bool {
+        defaults.bool(forKey: self.kIsLoggedKey)
     }
 }

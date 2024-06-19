@@ -14,13 +14,19 @@
 		5F3B3B9D2C2095E00083673E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B9C2C2095E00083673E /* Task.swift */; };
 		5F3B3BA02C20A5F80083673E /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */; };
 		5F3B3BA32C20A6660083673E /* TasksTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3BA22C20A6660083673E /* TasksTableView.swift */; };
+		5F61976B2C22BF6900FD8253 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61976A2C22BF6900FD8253 /* StartViewController.swift */; };
+		5F61976F2C22C0E300FD8253 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61976E2C22C0E300FD8253 /* LoginViewController.swift */; };
+		5F6197712C22C1F500FD8253 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6197702C22C1F500FD8253 /* SignUpViewController.swift */; };
+		5F6197732C22C3EB00FD8253 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6197722C22C3EB00FD8253 /* RestorePasswordViewController.swift */; };
+		5F6197772C22CDFD00FD8253 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F6197762C22CDFD00FD8253 /* GoogleService-Info.plist */; };
+		5F6197792C22CE8D00FD8253 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6197782C22CE8D00FD8253 /* Router.swift */; };
 		5FB159112C216A8400BE3013 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159102C216A8400BE3013 /* TaskTableViewCell.swift */; };
 		5FB159142C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159132C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift */; };
 		5FB159192C21755100BE3013 /* TasksDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159182C21755100BE3013 /* TasksDatasource.swift */; };
 		5FB1591B2C21842E00BE3013 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1591A2C21842E00BE3013 /* TaskViewController.swift */; };
 		5FB1591D2C21A79200BE3013 /* TasksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1591C2C21A79200BE3013 /* TasksRepository.swift */; };
 		5FB159212C21D1A700BE3013 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159202C21D1A700BE3013 /* Date+ToString.swift */; };
-		5FB159242C21EB9400BE3013 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159232C21EB9400BE3013 /* UserDefaults.swift */; };
+		5FB159242C21EB9400BE3013 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159232C21EB9400BE3013 /* UserSettings.swift */; };
 		5FB159262C21F7E100BE3013 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159252C21F7E100BE3013 /* Constants.swift */; };
 		681D60AD030E2E0861B441CF /* Pods_To_DoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9D8CE5810F37CF11CF115F /* Pods_To_DoDemo.framework */; };
 /* End PBXBuildFile section */
@@ -37,13 +43,19 @@
 		5F3B3B9C2C2095E00083673E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
 		5F3B3BA22C20A6660083673E /* TasksTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableView.swift; sourceTree = "<group>"; };
+		5F61976A2C22BF6900FD8253 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		5F61976E2C22C0E300FD8253 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5F6197702C22C1F500FD8253 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5F6197722C22C3EB00FD8253 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
+		5F6197762C22CDFD00FD8253 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F6197782C22CE8D00FD8253 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5FB159102C216A8400BE3013 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5FB159132C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		5FB159182C21755100BE3013 /* TasksDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDatasource.swift; sourceTree = "<group>"; };
 		5FB1591A2C21842E00BE3013 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		5FB1591C2C21A79200BE3013 /* TasksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRepository.swift; sourceTree = "<group>"; };
 		5FB159202C21D1A700BE3013 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
-		5FB159232C21EB9400BE3013 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		5FB159232C21EB9400BE3013 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		5FB159252C21F7E100BE3013 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E46AA9ABA42B99D3A98BD908 /* Pods-To-DoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To-DoDemo.debug.xcconfig"; path = "Target Support Files/Pods-To-DoDemo/Pods-To-DoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +103,7 @@
 				5F3B3B8F2C2050320083673E /* Assets.xcassets */,
 				5F3B3B912C2050320083673E /* LaunchScreen.storyboard */,
 				5F3B3B942C2050320083673E /* Info.plist */,
+				5F6197762C22CDFD00FD8253 /* GoogleService-Info.plist */,
 			);
 			path = "To-DoDemo";
 			sourceTree = "<group>";
@@ -115,9 +128,8 @@
 		5F3B3B9E2C20A5DE0083673E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */,
-				5FB159182C21755100BE3013 /* TasksDatasource.swift */,
-				5FB1591A2C21842E00BE3013 /* TaskViewController.swift */,
+				5F61976D2C22C0CC00FD8253 /* Auth */,
+				5F61976C2C22C0BF00FD8253 /* Main */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +141,27 @@
 				5FB159102C216A8400BE3013 /* TaskTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5F61976C2C22C0BF00FD8253 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */,
+				5FB159182C21755100BE3013 /* TasksDatasource.swift */,
+				5FB1591A2C21842E00BE3013 /* TaskViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5F61976D2C22C0CC00FD8253 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5F61976A2C22BF6900FD8253 /* StartViewController.swift */,
+				5F61976E2C22C0E300FD8253 /* LoginViewController.swift */,
+				5F6197702C22C1F500FD8253 /* SignUpViewController.swift */,
+				5F6197722C22C3EB00FD8253 /* RestorePasswordViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		5FB159122C216E9100BE3013 /* Extensions */ = {
@@ -151,8 +184,9 @@
 		5FB159222C21EB8200BE3013 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5FB159232C21EB9400BE3013 /* UserDefaults.swift */,
+				5FB159232C21EB9400BE3013 /* UserSettings.swift */,
 				5FB159252C21F7E100BE3013 /* Constants.swift */,
+				5F6197782C22CE8D00FD8253 /* Router.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -234,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6197772C22CDFD00FD8253 /* GoogleService-Info.plist in Resources */,
 				5F3B3B932C2050320083673E /* LaunchScreen.storyboard in Resources */,
 				5F3B3B902C2050320083673E /* Assets.xcassets in Resources */,
 			);
@@ -289,13 +324,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB159112C216A8400BE3013 /* TaskTableViewCell.swift in Sources */,
+				5F61976B2C22BF6900FD8253 /* StartViewController.swift in Sources */,
 				5F3B3BA32C20A6660083673E /* TasksTableView.swift in Sources */,
+				5F61976F2C22C0E300FD8253 /* LoginViewController.swift in Sources */,
+				5F6197792C22CE8D00FD8253 /* Router.swift in Sources */,
 				5FB159192C21755100BE3013 /* TasksDatasource.swift in Sources */,
 				5F3B3B9D2C2095E00083673E /* Task.swift in Sources */,
-				5FB159242C21EB9400BE3013 /* UserDefaults.swift in Sources */,
+				5FB159242C21EB9400BE3013 /* UserSettings.swift in Sources */,
 				5FB159142C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				5FB159212C21D1A700BE3013 /* Date+ToString.swift in Sources */,
 				5FB159262C21F7E100BE3013 /* Constants.swift in Sources */,
+				5F6197712C22C1F500FD8253 /* SignUpViewController.swift in Sources */,
+				5F6197732C22C3EB00FD8253 /* RestorePasswordViewController.swift in Sources */,
 				5FB1591D2C21A79200BE3013 /* TasksRepository.swift in Sources */,
 				5F3B3BA02C20A5F80083673E /* TasksListViewController.swift in Sources */,
 				5F3B3B872C2050310083673E /* AppDelegate.swift in Sources */,
@@ -459,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.To-DoDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Khomyakov.To-DoDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -489,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.To-DoDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Khomyakov.To-DoDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

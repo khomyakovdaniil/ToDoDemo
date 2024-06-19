@@ -63,11 +63,16 @@ extension TasksListViewController {
                                             target: self,
                                             action: #selector(addTask)
         )
+        let logOutButton = UIBarButtonItem(title: Constants.Strings.logOutAction,
+                                            style: .plain,
+                                            target: self,
+                                            action: #selector(logOut)
+        )
         let switchFilterButton = UIBarButtonItem(title: Constants.Strings.sortedByDate,
                                                  style: .plain,
                                                  target: self,
                                                  action: #selector(switchFilter))
-        navigationItem.rightBarButtonItem = addTaskButton
+        navigationItem.rightBarButtonItems = [addTaskButton, logOutButton]
         navigationItem.leftBarButtonItem = switchFilterButton
     }
     
@@ -120,7 +125,7 @@ extension TasksListViewController: UITableViewDelegate {
             tTask.date = task.date
             taskViewController.task = tTask
         }
-        self.navigationController?.pushViewController(taskViewController, animated: true)
+        self.navigationController?.pushViewController(taskViewController, animated: false)
     }
     
     // Task completion action on swipe right
@@ -164,6 +169,11 @@ extension TasksListViewController {
         sortedByDate.toggle()
         sortTasks()
         UserSetting.setSortedByResult(!sortedByDate)
+    }
+    
+    @objc func logOut() {
+        UserSetting.setIsLogged(false)
+        Router.setRootViewController()
     }
     
     private func sortTasks() {

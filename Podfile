@@ -7,6 +7,10 @@ target 'To-DoDemo' do
   #Database
   pod 'RealmSwift'
 
+  #Auth
+  pod 'FirebaseAuth'
+  pod 'GoogleSignIn'
+
 end
 
 post_install do |installer|
