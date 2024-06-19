@@ -65,13 +65,22 @@ class LoginViewController: UIViewController {
     
     @objc func login() {
         // We try to sing in the user with provided credentials
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] (user, error) in
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text else {
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
             if error == nil {
                 guard let user = Auth.auth().currentUser else {
                     return
                 }
                 // Verified user can proceed to enjoy the app
                 UserSetting.setIsLogged(true)
+                guard let email = user.email else {
+                    return
+                }
+                UserSetting.setUserName(email)
                 Router.setRootViewController()
             } else {
                 // Here the user couldn't sign in so we show him the error text provided by firebase

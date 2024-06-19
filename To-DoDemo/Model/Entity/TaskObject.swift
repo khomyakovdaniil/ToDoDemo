@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-final class Task: Object {
+final class TaskObject: Object {
     
     @objc dynamic var id: Int = UUID().hashValue
     @objc dynamic var title: String = "Title"

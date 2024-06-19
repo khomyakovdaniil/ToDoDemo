@@ -38,6 +38,10 @@ final class TasksListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        tasksRepository.fetchRemote() { tasks in
+            self.datasource.tasks = tasks
+            self.sortTasks()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) { // Reloads tasks list each time the view appears
@@ -118,11 +122,12 @@ extension TasksListViewController: UITableViewDelegate {
         if let indexPath = indexPath {
             // We create a copy of a Task to avoid changing the realm object directly
             let task = datasource.tasks[indexPath.row]
-            let tTask = Task()
+            let tTask = TaskObject()
             tTask.id = task.id
             tTask.title = task.title
             tTask.textDescription = task.textDescription
             tTask.date = task.date
+            tTask.completed = task.completed
             taskViewController.task = tTask
         }
         self.navigationController?.pushViewController(taskViewController, animated: false)
@@ -173,6 +178,7 @@ extension TasksListViewController {
     
     @objc func logOut() {
         UserSetting.setIsLogged(false)
+        tasksRepository.removeAllLocal()
         Router.setRootViewController()
     }
     

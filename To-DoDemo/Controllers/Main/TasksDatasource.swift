@@ -9,7 +9,7 @@ import UIKit
 
 final class TasksDataSource: NSObject, UITableViewDataSource {
     
-    var tasks: [Task] = []
+    var tasks: [TaskObject] = []
     
     override init() {
         super.init()

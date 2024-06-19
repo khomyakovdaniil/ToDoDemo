@@ -10,7 +10,7 @@ import UIKit
 final class TaskViewController: UIViewController {
     
     // MARK: - Properties
-    var task: Task = Task()
+    var task: TaskObject = TaskObject()
     
     private let kStandartSpacing = 32.0
     private let kContentTextViewHeight = 100.0
@@ -93,12 +93,18 @@ final class TaskViewController: UIViewController {
         titleTextField.endEditing(true)
         contentTextView.endEditing(true)
         datePicker.endEditing(true)
-        
         // Save task
-        tasksRepository?.save(task)
-        
-        // Close vc
-        self.navigationController?.popViewController(animated: false)
+        tasksRepository?.uploadTask(task) { [weak self] success in
+            guard let self else {
+                return
+            }
+            if success {
+                self.tasksRepository?.save(self.task)
+                self.navigationController?.popViewController(animated: false)
+            } else {
+                print("failed to upload")
+            }
+        }
     }
 }
 

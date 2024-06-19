@@ -87,9 +87,13 @@ class StartViewController: UIViewController {
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                            accessToken: user.accessToken.tokenString)
             
-            Auth.auth().signIn(with: credential) { [weak self] result, error in
+            Auth.auth().signIn(with: credential) { result, error in
                 if error == nil {
                     UserSetting.setIsLogged(true)
+                    guard let email = user.profile?.email else {
+                        return // TODO: alert message
+                    }
+                    UserSetting.setUserName(email)
                     Router.setRootViewController()
                 }
             }

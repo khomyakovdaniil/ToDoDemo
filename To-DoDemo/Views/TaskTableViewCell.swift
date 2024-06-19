@@ -66,7 +66,7 @@ class TaskTableViewCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    func setCell(task: Task) {
+    func setCell(task: TaskObject) {
         titleLabel.text = task.title
         descriptionLabel.text = task.textDescription
         dateLabel.text = task.date.toString()

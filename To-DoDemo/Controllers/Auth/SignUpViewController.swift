@@ -79,6 +79,10 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func signUp() {
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text else {
+            return
+        }
         // The passwords should match each other, otherwise we show an error alert
         if passwordTextField.text != confirmPasswordTextField.text {
             let alertController = UIAlertController(title: Constants.Alerts.wrongPasswordTitle, message: Constants.Alerts.wrongPasswordMessage, preferredStyle: .alert)
@@ -88,7 +92,7 @@ class SignUpViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         } else {
             // If the input is correct we try to create a user with provided credentials
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ [weak self] (user, error) in
+            Auth.auth().createUser(withEmail: email, password: password){ [weak self] (user, error) in
                 if error == nil {
                     guard let user = Auth.auth().currentUser else {
                         return

@@ -11,7 +11,7 @@
 		5F3B3B892C2050310083673E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B882C2050310083673E /* SceneDelegate.swift */; };
 		5F3B3B902C2050320083673E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B3B8F2C2050320083673E /* Assets.xcassets */; };
 		5F3B3B932C2050320083673E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B3B912C2050320083673E /* LaunchScreen.storyboard */; };
-		5F3B3B9D2C2095E00083673E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B9C2C2095E00083673E /* Task.swift */; };
+		5F3B3B9D2C2095E00083673E /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B9C2C2095E00083673E /* TaskObject.swift */; };
 		5F3B3BA02C20A5F80083673E /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */; };
 		5F3B3BA32C20A6660083673E /* TasksTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B3BA22C20A6660083673E /* TasksTableView.swift */; };
 		5F61976B2C22BF6900FD8253 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61976A2C22BF6900FD8253 /* StartViewController.swift */; };
@@ -20,6 +20,8 @@
 		5F6197732C22C3EB00FD8253 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6197722C22C3EB00FD8253 /* RestorePasswordViewController.swift */; };
 		5F6197772C22CDFD00FD8253 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F6197762C22CDFD00FD8253 /* GoogleService-Info.plist */; };
 		5F6197792C22CE8D00FD8253 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6197782C22CE8D00FD8253 /* Router.swift */; };
+		5F61977C2C22E38400FD8253 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61977B2C22E38400FD8253 /* Api.swift */; };
+		5F61977E2C22E84400FD8253 /* TasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61977D2C22E84400FD8253 /* TasksService.swift */; };
 		5FB159112C216A8400BE3013 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159102C216A8400BE3013 /* TaskTableViewCell.swift */; };
 		5FB159142C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159132C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift */; };
 		5FB159192C21755100BE3013 /* TasksDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB159182C21755100BE3013 /* TasksDatasource.swift */; };
@@ -40,7 +42,7 @@
 		5F3B3B8F2C2050320083673E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F3B3B922C2050320083673E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3B3B942C2050320083673E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F3B3B9C2C2095E00083673E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5F3B3B9C2C2095E00083673E /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
 		5F3B3B9F2C20A5F80083673E /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
 		5F3B3BA22C20A6660083673E /* TasksTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableView.swift; sourceTree = "<group>"; };
 		5F61976A2C22BF6900FD8253 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		5F6197722C22C3EB00FD8253 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
 		5F6197762C22CDFD00FD8253 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F6197782C22CE8D00FD8253 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5F61977B2C22E38400FD8253 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5F61977D2C22E84400FD8253 /* TasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksService.swift; sourceTree = "<group>"; };
 		5FB159102C216A8400BE3013 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5FB159132C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		5FB159182C21755100BE3013 /* TasksDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDatasource.swift; sourceTree = "<group>"; };
@@ -120,7 +124,7 @@
 		5F3B3B9B2C20958C0083673E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				5F3B3B9C2C2095E00083673E /* Task.swift */,
+				5F3B3B9C2C2095E00083673E /* TaskObject.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -164,6 +168,15 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		5F61977A2C22E37300FD8253 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F61977B2C22E38400FD8253 /* Api.swift */,
+				5F61977D2C22E84400FD8253 /* TasksService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5FB159122C216E9100BE3013 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +197,7 @@
 		5FB159222C21EB8200BE3013 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5F61977A2C22E37300FD8253 /* Network */,
 				5FB159232C21EB9400BE3013 /* UserSettings.swift */,
 				5FB159252C21F7E100BE3013 /* Constants.swift */,
 				5F6197782C22CE8D00FD8253 /* Router.swift */,
@@ -326,10 +340,12 @@
 				5FB159112C216A8400BE3013 /* TaskTableViewCell.swift in Sources */,
 				5F61976B2C22BF6900FD8253 /* StartViewController.swift in Sources */,
 				5F3B3BA32C20A6660083673E /* TasksTableView.swift in Sources */,
+				5F61977C2C22E38400FD8253 /* Api.swift in Sources */,
+				5F61977E2C22E84400FD8253 /* TasksService.swift in Sources */,
 				5F61976F2C22C0E300FD8253 /* LoginViewController.swift in Sources */,
 				5F6197792C22CE8D00FD8253 /* Router.swift in Sources */,
 				5FB159192C21755100BE3013 /* TasksDatasource.swift in Sources */,
-				5F3B3B9D2C2095E00083673E /* Task.swift in Sources */,
+				5F3B3B9D2C2095E00083673E /* TaskObject.swift in Sources */,
 				5FB159242C21EB9400BE3013 /* UserSettings.swift in Sources */,
 				5FB159142C216EA900BE3013 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				5FB159212C21D1A700BE3013 /* Date+ToString.swift in Sources */,

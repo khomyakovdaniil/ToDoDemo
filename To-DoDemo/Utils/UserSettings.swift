@@ -13,6 +13,7 @@ final class UserSetting { // Helper class to access UserDefaults, doesn't store 
     
     static let kSortedByResultKey = "filteredByResult"
     static let kIsLoggedKey = "isLoggedIn"
+    static let kUserNameKey = "userName"
     
     static func getSortedByResult() -> Bool {
         defaults.bool(forKey: kSortedByResultKey)
@@ -28,5 +29,14 @@ final class UserSetting { // Helper class to access UserDefaults, doesn't store 
 
     static func getIsLogged() -> Bool {
         defaults.bool(forKey: self.kIsLoggedKey)
+    }
+    
+    static func setUserName(_ userName: String) {
+        let userNameEncoded = userName.replacingOccurrences(of: "@", with: "").replacingOccurrences(of: ".", with: "")
+        defaults.set(userName, forKey: self.kUserNameKey)
+    }
+
+    static func getUserName() -> String {
+        defaults.string(forKey: self.kUserNameKey) ?? ""
     }
 }
