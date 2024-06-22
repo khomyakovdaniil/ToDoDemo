@@ -37,7 +37,22 @@
 		5FF46BAC2C26D1EF00CF4DF2 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF46BAB2C26D1EF00CF4DF2 /* GoogleSignIn */; };
 		5FF46BAE2C26D1EF00CF4DF2 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF46BAD2C26D1EF00CF4DF2 /* GoogleSignInSwift */; };
 		5FF46BB12C26D20300CF4DF2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF46BB02C26D20300CF4DF2 /* Moya */; };
+		5FF46BB42C26D6B200CF4DF2 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 5FF46BA12C26CEF900CF4DF2 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FF46BB52C26D6B200CF4DF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5FF46BB42C26D6B200CF4DF2 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5F3B3B832C2050310083673E /* To-DoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-DoDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +237,7 @@
 				5F3B3B7F2C2050310083673E /* Sources */,
 				5F3B3B802C2050310083673E /* Frameworks */,
 				5F3B3B812C2050310083673E /* Resources */,
+				5FF46BB52C26D6B200CF4DF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
